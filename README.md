@@ -1,4 +1,4 @@
-# Mugdha Meda — Portfolio
+# Mugdha Meda - Portfolio
 
 A small, static portfolio site (single `index.html`, no build step) showcasing robotics,
 dynamics and controls projects. Works offline — just open `index.html` in a browser.
