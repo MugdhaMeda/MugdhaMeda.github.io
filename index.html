@@ -204,7 +204,7 @@
   <section id="featured">
     <div class="sec-head">
       <span class="sec-label">Featured</span>
-      <h2>Things I built and made move</h2>
+      <h2>Prototyped Myself</h2>
       <p>Hardware I designed, wrote firmware for, and closed the loop on.</p>
     </div>
 
@@ -220,13 +220,30 @@
         <div class="body">
           <h3>Passive-Legged Hopping Quadcopter</h3>
           <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> 2026–present</div>
-          <p class="desc">A 35 g quadcopter with springy passive legs that <em>hops</em> rather than only flies. I built a hybrid stance–flight dynamics model and a predictive controller that stabilizes continuous hopping to <b>0.1 m RMSE</b>, plus an encoder-free stance/swing MLP classifier at <b>0.93+ balanced accuracy</b> so the loop closes on onboard hardware alone.</p>
+          <p class="desc">A 35 g quadcopter with spring-like passive legs that hops and flies. I built a hybrid stance–flight dynamics model and a predictive controller that stabilizes continuous hopping to <b>0.1 m RMSE</b>.</p>
           <div class="tags">
             <span class="tag">state estimation</span><span class="tag">predictive control</span><span class="tag">off-policy RL</span><span class="tag">embedded</span>
           </div>
         </div>
       </article>
-
+An encoder-free stance/swing MLP classifier at <b>0.93+ balanced accuracy</b> 
+     <!-- Quadruped -->
+      <article class="fcard">
+        <div class="fmedia">
+          <video controls preload="metadata" playsinline poster="assets/img/hopcopter.jpg">
+            <source src="assets/video/hopcopter.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="body">
+          <h3>Gait Control for the 8cm Encoderless Quadruped Using Bare Current Sensing/h3> 
+          <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> 2026–present</div>
+          <p class="desc">This project develops a method to control the gait (e.g., pronk, trot, walk) of an 8 cm, 33 g quadruped robot whose legs have no encoders. The only available signal is the current each motor draws. The goal is to infer in real time when each leg is in stance (on the ground) or swing (in the air) from that current signal, and to use that transition timing to drive all four legs through a coordinated gait phase.</b>.</p>
+          <div class="tags">
+            <span class="tag">MLP data collection, feature engineering</span><span class="tag">state estimation</span><span class="tag">Gait centralized PD control</span><span class="tag">embedded</span>
+          </div>
+        </div>
+      </article>
+      
       <!-- POV cube -->
       <article class="fcard">
         <div class="fmedia">
@@ -236,10 +253,10 @@
         </div>
         <div class="body">
           <h3>Small Volumetric Display</h3>
-          <div class="meta">Personal build · firmware + geometry <span class="sep">·</span> 2025</div>
-          <p class="desc">A 16×9 LED panel on a wirelessly-powered spinning rotor that paints true 3D shapes in mid-air through persistence of vision. Hall-sensor phase lock, a <b>450 µs enable-bitmap redraw</b> trick to fit the I²C timing budget at 1200 rpm, and procedural water/shape physics — all on a XIAO nRF52840.</p>
+          <div class="meta">Personal build · firmware + geometry <span class="sep">·</span> 2026</div>
+          <p class="desc">A 16×9 LED panel on an innovated wirelessly-powered spinning rotor that generates 3D shapes in mid-air through persistence of vision. Hall-sensor anchors drift, used a trick to fit the I²C timing budget at 1200 rpm, built a cube wireframe in 3D coordinates and sliced for a cylindrical workspace- all on a XIAO nRF52840.</p>
           <div class="tags">
-            <span class="tag">embedded firmware</span><span class="tag">nRF52840</span><span class="tag">POV</span><span class="tag">I²C</span>
+            <span class="tag">embedded firmware</span><span class="tag">nRF52840</span><span class="tag">custom hardware</span><span class="tag">I²C</span>
           </div>
         </div>
       </article>
