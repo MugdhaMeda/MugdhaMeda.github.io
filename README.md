@@ -1,4 +1,4 @@
-# Mugdha Meda — Portfolio
+# Mugdha Meda - Portfolio
 
 A small, static portfolio site (single `index.html`, no build step) showcasing robotics,
 dynamics and controls projects. Works offline — just open `index.html` in a browser.
@@ -23,7 +23,7 @@ portfolio/
 
 ## Deploy to GitHub Pages
 
-**Option A — personal site at `baiorettehana.github.io`** (recommended)
+**Option A - personal site at `baiorettehana.github.io`** (recommended)
 
 1. Create a new GitHub repo named exactly **`BaioretteHana.github.io`**.
 2. From this `portfolio/` folder:
@@ -37,7 +37,7 @@ portfolio/
    ```
 3. Live in ~1 min at **https://baiorettehana.github.io**
 
-**Option B — project page** (keeps your username site free)
+**Option B - project page** (keeps your username site free)
 
 1. Create a repo, e.g. `portfolio`, push the same way.
 2. Repo → **Settings → Pages** → Source: `Deploy from a branch` → `main` / `/root` → Save.
