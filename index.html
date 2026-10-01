@@ -237,7 +237,8 @@
 
     <!-- [EDIT: INTRO] -->
     <div class="wrap intro">
-      <p>Hi, I am a Master's student in Mechanical Engineering at <b>Carnegie Mellon University</b> (Robotics, Dynamics and Controls) and a graduate researcher in the Microrobotics Lab. I work on <b>legged and aerial robots at the centimeter scale</b>, the control and state estimation that run them, and the dynamics models they are built on. Most of my work sits where the model has to agree with the hardware.</p>
+      <p>I am a Master's student in Mechanical Engineering- Research at Carnegie Mellon with a focus on Dynamics and Controls. As a graduate research assistant in the Microrobotics Lab, I work on legged and aerial robot control at the centimeter scale. My background runs across model-based and learned control, state estimation, multibody dynamics, and lots of hands-on mechanism design and fabrication. I am passionate about analyzing how the system works and utilizing it for insightful control.</p>
+      <p><b>Toolbox:</b> C/C++, Python, MATLAB/Simulink, ROS2, Arduino, ADAMS, Ansys, ABAQUS, Webots, Gazebo · Onshape, SolidWorks, Fusion 360.</p>
       <!-- [EDIT: LINKS] contact chips -->
       <div class="contact">
         <a class="chip" href="mailto:mmeda@andrew.cmu.edu">
@@ -275,14 +276,9 @@
           <div class="carousel" data-carousel>
             <div class="slides">
               <div class="slide">
-                <video autoplay muted loop playsinline preload="metadata" controls poster="assets/img/hopcopterv2.jpeg">
-                  <source src="assets/video/hopcopter.mp4" type="video/mp4"></video>
-              </div>
-              <div class="slide">
                 <video autoplay muted loop playsinline preload="metadata" controls>
                   <source src="assets/video/hopcopter_sysid.mp4" type="video/mp4"></video>
               </div>
-              <div class="slide"><img src="assets/img/hopcopterv2.jpeg" alt="Hopcopter prototype" loading="lazy"></div>
               <!-- ADD A PHOTO: copy the line below, drop your file in assets/img/, update src + alt
               <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div>
               -->
@@ -299,11 +295,35 @@
           </div>
         </article>
 
+        <!-- Airflow sensing with a flow whisker -->
+        <article class="card">
+          <div class="carousel contain" data-carousel>
+            <div class="slides">
+              <div class="slide"><img src="assets/img/whisker.jpeg" alt="Flow-sensing whisker mounted on a Crazyflie drone" loading="lazy"></div>
+              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
+            </div>
+            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
+            <button class="cbtn next" aria-label="Next">&#8250;</button>
+            <div class="dots"></div>
+          </div>
+          <div class="body">
+            <h3>Airflow Sensing with a Flow Whisker</h3>
+            <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> 2026 to present</div>
+            <p class="desc">A neural network that reads 3D relative airflow velocity from a bio-inspired magnetic whisker sensor I prototyped by hand, mounted on a Crazyflie. It takes the whisker signal and the drone's onboard flight EKF estimates as inputs and maps them to ground-truth airflow, decoupling ambient wind from the drone's own motion for outdoor wind estimation. I train it indoors so it can be used outdoors: flying under motion capture in a still room for the true relative airflow, and a strong blower of known output velocity in a still room.</p>
+            <div class="tags"><span class="tag">learned mapping</span><span class="tag">whisker sensor</span><span class="tag">flight EKF</span><span class="tag">Crazyflie</span></div>
+          </div>
+        </article>
+
         <!-- Quadruped -->
         <article class="card">
           <div class="carousel contain" data-carousel>
             <div class="slides">
               <div class="slide"><img src="assets/img/quad_scaled.jpeg" alt="7 cm encoderless quadruped robot" loading="lazy"></div>
+              <div class="slide">
+                <video autoplay muted loop playsinline preload="metadata" controls>
+                  <source src="assets/video/quad_run.mp4" type="video/mp4"></video>
+              </div>
+              <div class="slide"><img src="assets/img/army.jpg" alt="Encoderless quadruped robot hardware" loading="lazy"></div>
               <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
             </div>
             <button class="cbtn prev" aria-label="Previous">&#8249;</button>
@@ -355,6 +375,10 @@
         <article class="card">
           <div class="carousel" data-carousel>
             <div class="slides">
+              <div class="slide">
+                <video autoplay muted loop playsinline preload="metadata" controls>
+                  <source src="assets/video/cube_test.mp4" type="video/mp4"></video>
+              </div>
               <div class="slide">
                 <video autoplay muted loop playsinline preload="metadata" controls>
                   <source src="assets/video/voldisp1.mp4" type="video/mp4"></video>
@@ -421,6 +445,31 @@
             <div class="tags"><span class="tag">vehicle design</span><span class="tag">suspension</span><span class="tag">autonomous bot</span></div>
             <div class="links">
               <a class="lnk" href="assets/reports/igvc-vikram-design-report.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Design report</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Steer-by-Wire autonomous shuttle (carousel: video + photo) -->
+        <article class="card">
+          <div class="carousel" data-carousel>
+            <div class="slides">
+              <div class="slide">
+                <video autoplay muted loop playsinline preload="metadata" controls poster="assets/img/bolt.png">
+                  <source src="assets/video/bolt_run.mp4" type="video/mp4"></video>
+              </div>
+              <div class="slide"><img src="assets/img/bolt.png" alt="Steer-by-wire autonomous shuttle built from an e-golf cart" loading="lazy"></div>
+              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
+            </div>
+            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
+            <button class="cbtn next" aria-label="Next">&#8250;</button>
+            <div class="dots"></div>
+          </div>
+          <div class="body">
+            <h3>Steer-by-Wire Autonomous Shuttle <span class="badge">Featured in press</span></h3>
+            <div class="meta">Mechanical Lead · Team Abhiyaan, IIT Madras <span class="sep">·</span> 2022 to 2023</div>
+            <p class="desc">A steer-by-wire module that turns an e-golf cart into an autonomous shuttle. I designed FEA-validated mounts for the rack actuation and mapped the steering control so the drive-by-wire commands track the intended steer angle.</p>
+            <div class="tags"><span class="tag">steer-by-wire</span><span class="tag">actuation</span><span class="tag">FEA</span><span class="tag">autonomous shuttle</span></div>
+            <div class="links">
               <a class="lnk" href="assets/reports/times-of-india-driverless.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg> Press</a>
             </div>
           </div>
