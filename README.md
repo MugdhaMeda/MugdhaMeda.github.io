@@ -1,7 +1,7 @@
 # Mugdha Meda - Portfolio
 
 A small, static portfolio site (single `index.html`, no build step) showcasing robotics,
-dynamics and controls projects. Works offline — just open `index.html` in a browser.
+dynamics and controls projects. Works offline, just open `index.html` in a browser.
 
 Three tabs (mostly-white design, black heading strips): **Home** (photo band + name +
 short intro with Email / LinkedIn / Resume / GitHub links), **Projects** (Research and
