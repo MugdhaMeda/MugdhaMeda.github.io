@@ -29,8 +29,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mugdha Meda · Portfolio</title>
-<meta name="description" content="Portfolio of Mugdha Meda, MS Mechanical Engineering (Robotics, Dynamics and Controls), Carnegie Mellon University.">
+<title>Mugdha Meda - Portfolio</title>
+<meta name="description" content="Portfolio of Mugdha Meda, MS Mechanical Engineering- Research (Dynamics and Controls), Carnegie Mellon University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -341,34 +341,12 @@
           </div>
         </article>
 
-        <!-- Rover suspension patent -->
-        <article class="card">
-          <div class="carousel contain" data-carousel>
-            <div class="slides">
-              <div class="slide"><img src="assets/img/rover.jpg" alt="Double-lambda bogie rover suspension linkage" loading="lazy"></div>
-              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
-            </div>
-            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
-            <button class="cbtn next" aria-label="Next">&#8250;</button>
-            <div class="dots"></div>
-          </div>
-          <div class="body">
-            <h3>Variable Ride-Height Rover Suspension <span class="badge">Patent</span></h3>
-            <div class="meta">Adaptive Martian Rover Platform <span class="sep">·</span> IN&nbsp;202341083243</div>
-            <p class="desc">An actuated suspension that shifts the rover's center of gravity while it is moving, giving <b>+50% ground clearance</b> and <b>+30% gradeability</b> over a standard Mars rover. A Chebyshev-linkage articulation system keeps the bogies from overturning.</p>
-            <div class="tags"><span class="tag">mechanism design</span><span class="tag">CAD</span><span class="tag">FEA</span></div>
-            <div class="links">
-              <a class="lnk" href="assets/reports/martian-rover-suspension.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Presentation</a>
-            </div>
-          </div>
-        </article>
-
       </div>
 
       <!-- ---- [EDIT: OTHER] ---- -->
       <div class="strip">
         <h2>Other Projects</h2>
-        <p>Course, team, and personal builds: autonomy stacks, embedded hardware, and controls.</p>
+        <p>Course, team, and personal projects.</p>
       </div>
 
       <div class="grid">
@@ -394,29 +372,29 @@
           <div class="body">
             <h3>Small Volumetric Display</h3>
             <div class="meta">Personal build · firmware and geometry <span class="sep">·</span> 2026</div>
-            <p class="desc">A 16x9 LED panel on a wirelessly powered spinning rotor that draws 3D shapes in mid-air through persistence of vision. A Hall sensor anchors the drift, careful timing fits the I²C budget at 1200 rpm, and a tilted cube wireframe is built in 3D and sliced for the cylindrical workspace, all running on a XIAO nRF52840.</p>
+            <p class="desc">Can you see the 3D static cube? A 16x9 LED panel on a wirelessly powered spinning rotor that draws 3D shapes in mid-air through persistence of vision. A Hall sensor anchors the drift, careful timing fits the I²C budget at 1200 rpm, and a tilted cube wireframe is built in 3D and sliced for the cylindrical workspace, all running on a XIAO nRF52840.</p>
             <div class="tags"><span class="tag">embedded firmware</span><span class="tag">nRF52840</span><span class="tag">custom hardware</span><span class="tag">I²C</span></div>
           </div>
         </article>
 
-        <!-- AV control stack (SVG illustration, no carousel) -->
         <article class="card">
-          <div class="media">
-            <div style="aspect-ratio:16/10;background:#0b0b0b;position:relative">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Path planning and control" style="position:absolute;inset:0;width:100%;height:100%">
-                <rect width="400" height="250" fill="#0b0b0b"/>
-                <g stroke="#2a2a2a" stroke-width="1"><path d="M0 50h400M0 100h400M0 150h400M0 200h400M50 0v250M100 0v250M150 0v250M200 0v250M250 0v250M300 0v250M350 0v250"/></g>
-                <path d="M30 210 C120 210 90 90 200 100 S320 60 375 40" fill="none" stroke="#fff" stroke-width="2.4" stroke-dasharray="2 7" stroke-linecap="round"/>
-                <g fill="#fff"><circle cx="30" cy="210" r="4"/><circle cx="130" cy="150" r="4"/><circle cx="200" cy="100" r="4"/><circle cx="290" cy="72" r="4"/><circle cx="375" cy="40" r="4"/></g>
-                <g transform="translate(30,210)"><rect x="-9" y="-6" width="18" height="12" rx="2.5" fill="#fff"/></g>
-              </svg>
+          <div class="carousel contain" data-carousel>
+            <div class="slides">
+              <div class="slide"><img src="assets/img/rover.jpg" alt="Double-lambda bogie rover suspension linkage" loading="lazy"></div>
+              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
             </div>
+            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
+            <button class="cbtn next" aria-label="Next">&#8250;</button>
+            <div class="dots"></div>
           </div>
           <div class="body">
-            <h3>Full-Stack Autonomous Vehicle Control</h3>
-            <div class="meta">Modern Control Theory · CMU <span class="sep">·</span> Oct 2025 to Dec 2025</div>
-            <p class="desc">PID, full-state feedback, and <b>LQR</b> lateral and longitudinal controllers on a linearized bicycle model, which cut lap time and tracking error in a Webots closed-loop simulation. I then closed the loop without the default sensing by adding <b>EKF-SLAM</b> localization and <b>A*</b> path planning.</p>
-            <div class="tags"><span class="tag">LQR</span><span class="tag">EKF-SLAM</span><span class="tag">A*</span><span class="tag">Webots</span></div>
+            <h3>Variable Ride-Height Rover Suspension <span class="badge">Patent</span></h3>
+            <div class="meta">Adaptive Martian Rover Platform <span class="sep">·</span> IN&nbsp;202341083243</div>
+            <p class="desc">An actuated suspension that shifts the rover's center of gravity while it is moving, giving <b>+50% ground clearance</b> and <b>+30% gradeability</b> over a standard Mars rover. A Chebyshev-linkage articulation system keeps the bogies from overturning.</p>
+            <div class="tags"><span class="tag">mechanism design</span><span class="tag">CAD</span><span class="tag">FEA</span></div>
+            <div class="links">
+              <a class="lnk" href="assets/reports/martian-rover-suspension.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Presentation</a>
+            </div>
           </div>
         </article>
 
@@ -445,6 +423,27 @@
               <a class="lnk" href="assets/reports/igvc-vikram-design-report.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Design report</a>
               <a class="lnk" href="assets/reports/times-of-india-driverless.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg> Press</a>
             </div>
+          </div>
+        </article>
+
+        <!-- AV control stack (SVG illustration, no carousel) -->
+        <article class="card">
+          <div class="media">
+            <div style="aspect-ratio:16/10;background:#0b0b0b;position:relative">
+              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Path planning and control" style="position:absolute;inset:0;width:100%;height:100%">
+                <rect width="400" height="250" fill="#0b0b0b"/>
+                <g stroke="#2a2a2a" stroke-width="1"><path d="M0 50h400M0 100h400M0 150h400M0 200h400M50 0v250M100 0v250M150 0v250M200 0v250M250 0v250M300 0v250M350 0v250"/></g>
+                <path d="M30 210 C120 210 90 90 200 100 S320 60 375 40" fill="none" stroke="#fff" stroke-width="2.4" stroke-dasharray="2 7" stroke-linecap="round"/>
+                <g fill="#fff"><circle cx="30" cy="210" r="4"/><circle cx="130" cy="150" r="4"/><circle cx="200" cy="100" r="4"/><circle cx="290" cy="72" r="4"/><circle cx="375" cy="40" r="4"/></g>
+                <g transform="translate(30,210)"><rect x="-9" y="-6" width="18" height="12" rx="2.5" fill="#fff"/></g>
+              </svg>
+            </div>
+          </div>
+          <div class="body">
+            <h3>Full-Stack Autonomous Vehicle Control</h3>
+            <div class="meta">Modern Control Theory · CMU <span class="sep">·</span> Oct 2025 to Dec 2025</div>
+            <p class="desc">PID, full-state feedback, and <b>LQR</b> lateral and longitudinal controllers on a linearized bicycle model, which cut lap time and tracking error in a Webots closed-loop simulation. I then closed the loop without the default sensing by adding <b>EKF-SLAM</b> localization and <b>A*</b> path planning.</p>
+            <div class="tags"><span class="tag">LQR</span><span class="tag">EKF-SLAM</span><span class="tag">A*</span><span class="tag">Webots</span></div>
           </div>
         </article>
 
@@ -514,7 +513,7 @@
     <div class="wrap panel-top">
       <div class="strip">
         <h2>Resume</h2>
-        <p>One page, updated for a Fall 2026 start.</p>
+        <p>Looking for full-time roles after graduating, May 2027.</p>
       </div>
       <div class="btn-row">
         <a class="btn solid" href="assets/Mugdha_Meda_Resume.pdf" download>
@@ -542,9 +541,9 @@
       </div>
 
       <p class="about-text">
-        I am a Master's student in Mechanical Engineering at Carnegie Mellon (Robotics, Dynamics and Controls), currently a graduate researcher in the Microrobotics Lab working on legged and aerial robot control at the centimeter scale. My background runs across model-based and learned control, state estimation, multibody dynamics, and hands-on mechanism design and fabrication. I am happiest on problems where the model has to meet the hardware.
+        I am a Master's student in Mechanical Engineering- Research at Carnegie Mellon with a focus on Dynamics and Controls. As a graduate research assistant in the Microrobotics Lab, I work on legged and aerial robot control at the centimeter scale. My background runs across model-based and learned control, state estimation, multibody dynamics, and lots of hands-on mechanism design and fabrication. I am passionate about analyzing how the system works and utilizing it for insightful control.
         <br><br>
-        <b>Toolbox:</b> C/C++, Python, MATLAB/Simulink, ROS2, Arduino · ADAMS, Ansys, ABAQUS, Webots, Gazebo · Onshape, SolidWorks, Fusion 360.
+        <b>Toolbox:</b> C/C++, Python, MATLAB/Simulink, ROS2, Arduino, ADAMS, Ansys, ABAQUS, Webots, Gazebo · Onshape, SolidWorks, Fusion 360.
       </p>
 
       <div class="btn-row">
@@ -561,7 +560,7 @@
       <div class="strip">
         <h2>Other Interests</h2>
       </div>
-
+<!-- 
       <div class="interests">
         <div class="interest">
           <h4>Tinkering and making</h4>
@@ -575,7 +574,7 @@
           <h4>Dynamics and simulation</h4>
           <p>Multibody modeling and control simulation, for the plain satisfaction of a model that matches the real thing.</p>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
@@ -585,7 +584,8 @@
 <!-- [EDIT: FOOTER] -->
 <footer>
   <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Mugdha Meda · Pittsburgh, PA</p>
+    <!-- <p>© <span id="yr"></span> Mugdha Meda · Pittsburgh, PA</p> -->
+    <p><span id="yr"></span> Mugdha Meda - Portfolio</p>
     <div class="foot-links">
       <a href="mailto:mmeda@andrew.cmu.edu">Email</a>
       <a href="https://linkedin.com/in/mugdha-meda" target="_blank" rel="noopener">LinkedIn</a>
