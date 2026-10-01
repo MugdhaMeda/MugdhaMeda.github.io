@@ -290,7 +290,7 @@
           <div class="body">
             <h3>Passive-Legged Hopping Quadcopter</h3>
             <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> Jan 2026 to present</div>
-            <p class="desc">A 35 g quadcopter with spring-like passive legs that both hops and flies. I built a hybrid stance-flight dynamics model and a predictive controller from empirically identified return maps that holds continuous hopping to <b>0.1 m RMSE</b> while tracking a reference trajectory. I am now training an off-policy RL agent to capture the unmodeled dynamics and extend hopping to longer, more energy-efficient paths.</p>
+            <p class="desc">A 35 g quadcopter with spring-like passive legs that both hops and flies. I built a hybrid stance-flight dynamics model and a predictive controller from empirically identified return maps that holds continuous hopping to <b>0.1 m RMSE</b> while tracking a reference trajectory. I am now training an off-policy RL agent to capture the unmodeled dynamics and extend hopping to longer, more energy efficient paths.</p>
             <div class="tags"><span class="tag">state estimation</span><span class="tag">predictive control</span><span class="tag">off-policy RL</span><span class="tag">embedded</span></div>
           </div>
         </article>
@@ -309,7 +309,7 @@
           <div class="body">
             <h3>Airflow Sensing with a Flow Whisker</h3>
             <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> 2026 to present</div>
-            <p class="desc">A neural network that reads 3D relative airflow velocity from a bio-inspired magnetic whisker sensor I prototyped by hand, mounted on a Crazyflie. It takes the whisker signal and the drone's onboard flight EKF estimates as inputs and maps them to ground-truth airflow, decoupling ambient wind from the drone's own motion for outdoor wind estimation. I train it indoors so it can be used outdoors: flying under motion capture in a still room for the true relative airflow, and a strong blower of known output velocity in a still room.</p>
+            <p class="desc">A neural network that reads 3D relative airflow velocity from a bio-inspired magnetic whisker sensor, mounted on a Crazyflie. It takes the whisker signal and the drone's onboard flight EKF estimates as inputs and maps them to ground-truth airflow, decoupling ambient wind from the drone's own motion for outdoor wind estimation. Trained indoors with easy data acquisition, to be used outdoors. Trained flying under motion capture in a still room for the true relative airflow, and a strong blower of known output velocity.</p>
             <div class="tags"><span class="tag">learned mapping</span><span class="tag">whisker sensor</span><span class="tag">flight EKF</span><span class="tag">Crazyflie</span></div>
           </div>
         </article>
@@ -333,7 +333,7 @@
           <div class="body">
             <h3>Gait Control for an Encoderless Quadruped</h3>
             <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> Jan 2026 to present</div>
-            <p class="desc">Gait control for an 8 cm quadruped whose legs carry <b>no encoders</b>. The only signal is each motor's current draw, so I trained a current-sensing MLP classifier that reads stance versus swing per leg at <b>0.93+ balanced accuracy</b>. A phase-based controller then regulates stride frequency and touchdown timing with per-leg PD control, validated in MuJoCo and on hardware.</p>
+            <p class="desc">Gait control for an 8 cm quadruped whose legs carry <b>no encoders</b>. The only signal is each motor's current draw, so I trained a current-sensing MLP classifier that reads stance versus swing per leg at <b>0.93+ balanced accuracy</b>. A phase-based controller then regulates stride frequency and touchdown timing with PD control, validated in MuJoCo and on hardware.</p>
             <div class="tags"><span class="tag">MLP classifier</span><span class="tag">state estimation</span><span class="tag">phase-based gait</span><span class="tag">embedded</span></div>
           </div>
         </article>
@@ -352,7 +352,7 @@
           <div class="body">
             <h3>Rotor and Swash Plate Dynamics</h3>
             <div class="meta">B.Tech Thesis · IIT Madras <span class="sep">·</span> Nov 2024 to Mar 2025</div>
-            <p class="desc">A high-fidelity <b>ADAMS/View</b> multibody model of helicopter blade and swash plate dynamics that captures collective and cyclic pitch control and blade-flap response under varying aerodynamic loads. I validated it analytically in MATLAB, matching blade-flap response across a range of lift and drag loads.</p>
+            <p class="desc">A high fidelity <b>ADAMS/View</b> multibody model of helicopter blade and swash plate dynamics that captures collective and cyclic pitch control and blade-flap response under varying aerodynamic loads. I validated it analytically in MATLAB, matching blade-flap response across a range of lift and drag loads.</p>
             <div class="tags"><span class="tag">multibody dynamics</span><span class="tag">MSC ADAMS</span><span class="tag">aeroelasticity</span></div>
             <div class="links">
               <a class="lnk" href="assets/reports/helicopter-rotor-dynamics-thesis.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Thesis</a>
@@ -377,11 +377,11 @@
             <div class="slides">
               <div class="slide">
                 <video autoplay muted loop playsinline preload="metadata" controls>
-                  <source src="assets/video/cube_test.mp4" type="video/mp4"></video>
+                  <source src="assets/video/voldisp1.mp4" type="video/mp4"></video>
               </div>
               <div class="slide">
                 <video autoplay muted loop playsinline preload="metadata" controls>
-                  <source src="assets/video/voldisp1.mp4" type="video/mp4"></video>
+                  <source src="assets/video/cube_test.mp4" type="video/mp4"></video>
               </div>
               <div class="slide">
                 <video autoplay muted loop playsinline preload="metadata" controls>
@@ -529,7 +529,7 @@
           <div class="media contain"><img src="assets/img/mcl.jpg" alt="Monte Carlo localization particle convergence" loading="lazy"></div>
           <div class="body">
             <h3>Parallel Monte Carlo Localization</h3>
-            <div class="meta">Parallel Scientific Computing · CMU</div>
+            <div class="meta">Parallel Scientific Computing · IIT Madras</div>
             <p class="desc">A particle-filter localizer for mobile robots, parallelized with <b>OpenMP</b> and OpenACC for about a <b>55% speedup</b>. The particle cloud starts from global uncertainty and converges onto the true robot pose over successive iterations.</p>
             <div class="tags"><span class="tag">particle filter</span><span class="tag">OpenMP</span><span class="tag">OpenACC</span></div>
             <div class="links">
