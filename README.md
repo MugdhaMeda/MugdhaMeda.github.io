@@ -35,13 +35,13 @@ portfolio/
    git remote add origin https://github.com/BaioretteHana/BaioretteHana.github.io.git
    git push -u origin main
    ```
-3. Live in ~1 min at **https://baiorettehana.github.io**
+3. Live in ~1 min at **https://mugdhameda.github.io**
 
 **Option B - project page** (keeps your username site free)
 
 1. Create a repo, e.g. `portfolio`, push the same way.
 2. Repo → **Settings → Pages** → Source: `Deploy from a branch` → `main` / `/root` → Save.
-3. Live at **https://baiorettehana.github.io/portfolio**
+3. Live at **https://mugdhameda.github.io/portfolio**
 
 ## Editing
 
