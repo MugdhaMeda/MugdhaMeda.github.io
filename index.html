@@ -539,52 +539,44 @@
           </div>
         </article>
 
-        <!-- MCL -->
-        <article class="card">
-          <!-- <div class="media contain"><img src="assets/img/mcl.jpg" alt="Monte Carlo localization particle convergence" loading="lazy"></div> -->
-      <!-- MCL -->
-    <article class="card">
-      <div class="carousel" data-carousel>
-        </div> <!-- closes .slides -->
-    
-        <button class="cbtn prev" aria-label="Previous">&#8249;</button>
-        <button class="cbtn next" aria-label="Next">&#8250;</button>
-        <div class="dots"></div>
-      </div> <!-- closes .carousel -->
-          <div class="body">
-            <h3>Parallel Monte Carlo Localization</h3>
-            <div class="meta">Parallel Scientific Computing · IIT Madras</div>
-            <p class="desc">A particle-filter localizer for mobile robots, parallelized with <b>OpenMP</b> and OpenACC for about a <b>55% speedup</b>. The particle cloud starts from global uncertainty and converges onto the true robot pose over successive iterations.</p>
-            <div class="tags"><span class="tag">particle filter</span><span class="tag">OpenMP</span><span class="tag">OpenACC</span></div>
-            <div class="links">
-              <a class="lnk" href="assets/reports/monte-carlo-localization.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Report</a>
-            </div>
-          </div>
-        </article>
+<!-- MCL -->
+<article class="card">
+  <div class="media">
+    <video autoplay muted loop playsinline preload="metadata"
+           controls poster="assets/img/mcl.jpg">
+      <source src="assets/video/mcl.mp4" type="video/mp4">
+    </video>
+  </div>
 
-        <!-- Jansen linkage -->
+  <div class="body">
+    <h3>Parallel Monte Carlo Localization</h3>
+    <div class="meta">Parallel Scientific Computing · IIT Madras</div>
+    <p class="desc">
+      A particle-filter localizer for mobile robots, parallelized
+      with <b>OpenMP</b> and OpenACC for about a <b>55% speedup</b>.
+      The particle cloud starts from global uncertainty and converges
+      onto the true robot pose over successive iterations.
+    </p>
+    <div class="tags">
+      <span class="tag">particle filter</span>
+      <span class="tag">OpenMP</span>
+      <span class="tag">OpenACC</span>
+    </div>
+    <div class="links">
+      <a class="lnk" href="assets/reports/monte-carlo-localization.pdf"
+         target="_blank" rel="noopener">Report</a>
+    </div>
+  </div>
+</article>
+
 <!-- Jansen linkage -->
 <article class="card">
-  <div class="carousel" data-carousel>
-    <div class="slides">
-      <div class="slide">
-        <video autoplay muted loop playsinline preload="metadata"
-               controls poster="assets/img/jansen.jpeg">
-          <source src="assets/video/jansen.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <!-- <div class="slide">
-        <img src="assets/img/jansen.jpg"
-             alt="Jansen linkage synthesis and foot-path trace"
-             loading="lazy">
-      </div> -->
-    </div> <!-- closes .slides -->
-
-    <button class="cbtn prev" aria-label="Previous">&#8249;</button>
-    <button class="cbtn next" aria-label="Next">&#8250;</button>
-    <div class="dots"></div>
-  </div> <!-- closes .carousel -->
+  <div class="media">
+    <video autoplay muted loop playsinline preload="metadata"
+           controls poster="assets/img/jansen.jpeg">
+      <source src="assets/video/jansen.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <div class="body">
     <h3>Jansen Linkage Synthesis and Analysis</h3>
@@ -602,12 +594,7 @@
     </div>
     <div class="links">
       <a class="lnk" href="assets/reports/jansen-linkage.pdf"
-         target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24">
-          <path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-        </svg>
-        Report
-      </a>
+         target="_blank" rel="noopener">Report</a>
     </div>
   </div>
 </article>
