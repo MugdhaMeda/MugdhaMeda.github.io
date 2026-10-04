@@ -525,8 +525,30 @@
         </article>
 
         <!-- Spacecraft attitude -->
-        <article class="card">
+        <!-- <article class="card">
           <div class="media contain"><img src="assets/img/spacecraft.jpg" alt="Satellite attitude Euler axis diagram" loading="lazy"></div>
+        -->
+        <article class="card">
+        <div class="carousel" data-carousel>
+          <div class="slides">
+            <div class="slide">
+              <video autoplay muted loop playsinline preload="metadata"
+                     controls poster="assets/img/jansen.jpeg">
+                <source src="assets/video/jansen.mp4" type="video/mp4">
+              </video>
+            </div>
+      
+            <!-- <div class="slide">
+              <img src="assets/img/jansen.jpg"
+                   alt="Jansen linkage synthesis and foot-path trace"
+                   loading="lazy">
+            </div> -->
+            </div> <!-- closes .slides -->
+        
+            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
+            <button class="cbtn next" aria-label="Next">&#8250;</button>
+            <div class="dots"></div>
+          </div> <!-- closes .carousel -->
           <div class="body">
             <h3>Spacecraft Attitude Control (SDRE)</h3>
             <div class="meta">Dynamics and Control of Spacecraft · IIT Madras</div>
