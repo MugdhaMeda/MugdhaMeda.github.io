@@ -256,7 +256,7 @@
 
     <!-- [EDIT: INTRO] -->
     <div class="wrap intro">
-      <p>I am a Master's student in Mechanical Engineering- Research at Carnegie Mellon with a focus on Dynamics and Controls. My background spans model-based and learned control, state estimation, multibody dynamics, and lots of hands-on mechanism design and fabrication.</p>
+      <p>I am a Master's student in Mechanical Engineering- Research at Carnegie Mellon with a focus on Dynamics and Controls. My background spans model-based and learned control, state estimation, multibody dynamics, and much mechanism design and fabrication.</p>
       <p><b>Toolbox:</b> C/C++, Python, MATLAB/Simulink, ROS2, Arduino, ADAMS, Ansys, ABAQUS, Webots, Gazebo, Onshape, SolidWorks, Fusion 360.</p>
       <!-- [EDIT: LINKS] contact chips -->
       <div class="contact">
@@ -308,7 +308,7 @@
           <div class="body">
             <h3>Passive-Legged Hopping Quadcopter</h3>
             <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> Jan 2026 to present</div>
-            <p class="desc">A 35 g quadcopter with spring-like passive legs that both hops and flies. I built a hybrid stance-flight dynamics model and a predictive controller from empirically identified return maps that holds continuous hopping to <b>0.1 m RMSE</b> while tracking a reference trajectory. I am now training an off-policy RL agent to capture the unmodeled dynamics and extend hopping to longer, more energy efficient paths.</p>
+            <p class="desc">A 35 g quadcopter with spring-like passive legs that both hops and flies. Built a hybrid stance-flight dynamics model and a predictive controller from empirically identified return maps that holds continuous hopping to <b>0.1 m RMSE</b> while tracking a reference trajectory. Now training an off-policy RL agent to capture the unmodeled dynamics and extend hopping to longer, more energy efficient paths.</p>
             <div class="tags"><span class="tag">state estimation</span><span class="tag">predictive control</span><span class="tag">off-policy RL</span><span class="tag">embedded</span></div>
           </div>
         </article>
@@ -351,7 +351,7 @@
           <div class="body">
             <h3>Gait Control for an Encoderless Quadruped</h3>
             <div class="meta">Graduate research · Microrobotics Lab, CMU <span class="sep">·</span> Jan 2026 to present</div>
-            <p class="desc">Gait control for an 8 cm quadruped whose legs carry <b>no encoders</b>. The only signal is each motor's current draw, so I trained a current-sensing MLP classifier that reads stance versus swing per leg at <b>0.93+ balanced accuracy</b>. A phase-based controller then regulates stride frequency and touchdown timing with PD control, validated in MuJoCo and on hardware.</p>
+            <p class="desc">Gait control for an 8 cm quadruped whose legs carry <b>no encoders</b>. The only signal is each motor's current draw, so a current-sensing MLP classifier reads stance versus swing per leg at <b>0.93+ balanced accuracy</b>. A phase-based controller then regulates stride frequency and touchdown timing with PD control, validated in MuJoCo and on hardware.</p>
             <div class="tags"><span class="tag">MLP classifier</span><span class="tag">state estimation</span><span class="tag">phase-based gait</span><span class="tag">embedded</span></div>
           </div>
         </article>
@@ -370,7 +370,7 @@
           <div class="body">
             <h3>Rotor and Swash Plate Dynamics</h3>
             <div class="meta">B.Tech Thesis · IIT Madras <span class="sep">·</span> Nov 2024 to Mar 2025</div>
-            <p class="desc">A high fidelity <b>ADAMS/View</b> multibody model of helicopter blade and swash plate dynamics that captures collective and cyclic pitch control and blade-flap response under varying aerodynamic loads. I validated it analytically in MATLAB, matching blade-flap response across a range of lift and drag loads.</p>
+            <p class="desc">A high fidelity <b>ADAMS/View</b> multibody model of helicopter blade and swash plate dynamics that captures collective and cyclic pitch control and blade-flap response under varying aerodynamic loads. Validated analytically in MATLAB, matching blade-flap response across a range of lift and drag loads.</p>
             <div class="tags"><span class="tag">multibody dynamics</span><span class="tag">MSC ADAMS</span><span class="tag">aeroelasticity</span></div>
             <div class="links">
               <a class="lnk" href="assets/reports/helicopter-rotor-dynamics-thesis.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Thesis</a>
@@ -388,6 +388,10 @@
       </div>
 
       <div class="grid">
+
+        <!-- Card order here = display order. To reorder, move whole <article> blocks.
+             Current order: Volumetric, IGVC, Full-Stack AV, Variable Ride-Height,
+             Adaptive Exercise, Steer-by-Wire, then Spacecraft / MCL / Jansen. -->
 
         <!-- Volumetric display (carousel: 2 videos) -->
         <article class="card">
@@ -419,27 +423,6 @@
           </div>
         </article>
 
-        <article class="card">
-          <div class="carousel contain" data-carousel>
-            <div class="slides">
-              <div class="slide"><img src="assets/img/susp_rover.jpg" alt="Double-lambda bogie rover suspension linkage" loading="lazy"></div>
-              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
-            </div>
-            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
-            <button class="cbtn next" aria-label="Next">&#8250;</button>
-            <div class="dots"></div>
-          </div>
-          <div class="body">
-            <h3>Variable Ride-Height Rover Suspension <span class="badge">Patent</span></h3>
-            <div class="meta">Adaptive Martian Rover Platform <span class="sep">·</span> IN&nbsp;202341083243</div>
-            <p class="desc">An actuated suspension that shifts the rover's center of gravity while it is moving, giving <b>+50% ground clearance</b> and <b>+30% gradeability</b> over a standard Mars rover. A Chebyshev-linkage articulation system keeps the bogies from overturning.</p>
-            <div class="tags"><span class="tag">mechanism design</span><span class="tag">CAD</span><span class="tag">FEA</span></div>
-            <div class="links">
-              <a class="lnk" href="assets/reports/martian-rover-suspension.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Presentation</a>
-            </div>
-          </div>
-        </article>
-
         <!-- IGVC Vikram (carousel: video + 2 photos) -->
         <article class="card">
           <div class="carousel" data-carousel>
@@ -463,36 +446,10 @@
           <div class="body">
             <h3>Autonomous Ground Vehicle "Vikram" <span class="badge">1st, IGVC AutoNav</span></h3>
             <div class="meta">Mechanical Lead · Team Abhiyaan, IIT Madras <span class="sep">·</span> 2022 to 2023</div>
-            <p class="desc">I led a 5-engineer subteam on a $2K+ budget for the international IGVC. I owned the design, fabrication, and assembly, built a wishbone suspension that <b>cut vertical shock amplitudes by 55%</b>, and designed the actuated hatches and cooling. Vikram took 1st place in the AutoNav Design Competition.</p>
+            <p class="desc">Led a 5-engineer subteam on a $2K+ budget for the international IGVC. Owned the design, fabrication, and assembly, built a wishbone suspension that <b>cut vertical shock amplitudes by 55%</b>, and designed the actuated hatches and cooling. Vikram took 1st place in the AutoNav Design Competition.</p>
             <div class="tags"><span class="tag">vehicle design</span><span class="tag">suspension</span><span class="tag">autonomous bot</span></div>
             <div class="links">
               <a class="lnk" href="assets/reports/igvc-vikram-design-report.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Design report</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Steer-by-Wire autonomous shuttle (carousel: video + photo) -->
-        <article class="card">
-          <div class="carousel" data-carousel>
-            <div class="slides">
-              <div class="slide">
-                <video autoplay muted loop playsinline preload="metadata" controls poster="assets/img/bolt.png">
-                  <source src="assets/video/bolt_run.mp4" type="video/mp4"></video>
-              </div>
-              <div class="slide"><img src="assets/img/bolt.png" alt="Steer-by-wire autonomous shuttle built from an e-golf cart" loading="lazy"></div>
-              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
-            </div>
-            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
-            <button class="cbtn next" aria-label="Next">&#8250;</button>
-            <div class="dots"></div>
-          </div>
-          <div class="body">
-            <h3>Steer-by-Wire Autonomous Shuttle <span class="badge">Featured in press</span></h3>
-            <div class="meta">Mechanical Lead · Team Abhiyaan, IIT Madras <span class="sep">·</span> 2022 to 2023</div>
-            <p class="desc">A steer-by-wire module that turns an e-golf cart into an autonomous shuttle. I designed FEA-validated mounts for the rack actuation and mapped the steering control so the drive-by-wire commands track the intended steer angle.</p>
-            <div class="tags"><span class="tag">steer-by-wire</span><span class="tag">actuation</span><span class="tag">FEA</span><span class="tag">autonomous shuttle</span></div>
-            <div class="links">
-              <a class="lnk" href="assets/reports/times-of-india-driverless.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg> Press</a>
             </div>
           </div>
         </article>
@@ -504,7 +461,7 @@
                  alt="Autonomous vehicle simulation in Webots"
                  loading="lazy">
           </div>
-        
+
           <div class="body">
             <h3>Full-Stack Autonomous Vehicle Control</h3>
             <div class="meta">
@@ -528,16 +485,61 @@
           </div>
         </article>
 
-        <!-- Thryv internship -->
+        <!-- Variable Ride-Height Rover Suspension -->
+        <article class="card">
+          <div class="carousel contain" data-carousel>
+            <div class="slides">
+              <div class="slide"><img src="assets/img/susp_rover.jpg" alt="Double-lambda bogie rover suspension linkage" loading="lazy"></div>
+              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
+            </div>
+            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
+            <button class="cbtn next" aria-label="Next">&#8250;</button>
+            <div class="dots"></div>
+          </div>
+          <div class="body">
+            <h3>Variable Ride-Height Rover Suspension <span class="badge">Patent</span></h3>
+            <div class="meta">Adaptive Martian Rover Platform <span class="sep">·</span> IN&nbsp;202341083243</div>
+            <p class="desc">An actuated suspension that shifts the rover's center of gravity while it is moving, giving <b>+50% ground clearance</b> and <b>+30% gradeability</b> over a standard Mars rover. A Chebyshev-linkage articulation system keeps the bogies from overturning.</p>
+            <div class="tags"><span class="tag">mechanism design</span><span class="tag">CAD</span><span class="tag">FEA</span></div>
+            <div class="links">
+              <a class="lnk" href="assets/reports/martian-rover-suspension.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Presentation</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Adaptive Exercise Equipment (Thryv internship) -->
         <article class="card">
           <div class="media"><img src="assets/img/thryv.jpg" alt="Wheelchair exercise rig simulated in Gazebo" loading="lazy"></div>
           <div class="body">
             <h3>Adaptive Exercise Equipment R&amp;D</h3>
             <div class="meta">R&amp;D Intern · Thryv Mobility <span class="sep">·</span> Jun 2024 to Aug 2024</div>
-            <p class="desc">VESC brake-current control that sets motor torque from joint position, velocity, and acceleration to give programmable resistance for wheelchair-user strength training. I also built a hardware-in-the-loop rig on an ESP32 with <b>micro-ROS</b>, bridging the firmware to ROS2 and Gazebo so controllers could be tested before hardware trials.</p>
+            <p class="desc">VESC brake-current control that sets motor torque from joint position, velocity, and acceleration to give programmable resistance for wheelchair-user strength training. Also built a hardware-in-the-loop rig on an ESP32 with <b>micro-ROS</b>, bridging the firmware to ROS2 and Gazebo so controllers could be tested before hardware trials.</p>
             <div class="tags"><span class="tag">motor control</span><span class="tag">micro-ROS</span><span class="tag">HIL sim</span></div>
+          </div>
+        </article>
+
+        <!-- Steer-by-Wire autonomous shuttle (carousel: video + photo) -->
+        <article class="card">
+          <div class="carousel" data-carousel>
+            <div class="slides">
+              <div class="slide">
+                <video autoplay muted loop playsinline preload="metadata" controls poster="assets/img/bolt.png">
+                  <source src="assets/video/bolt_run.mp4" type="video/mp4"></video>
+              </div>
+              <div class="slide"><img src="assets/img/bolt.png" alt="Steer-by-wire autonomous shuttle built from an e-golf cart" loading="lazy"></div>
+              <!-- ADD A PHOTO: <div class="slide"><img src="assets/img/YOUR_FILE.jpg" alt="describe it" loading="lazy"></div> -->
+            </div>
+            <button class="cbtn prev" aria-label="Previous">&#8249;</button>
+            <button class="cbtn next" aria-label="Next">&#8250;</button>
+            <div class="dots"></div>
+          </div>
+          <div class="body">
+            <h3>Steer-by-Wire Autonomous Shuttle <span class="badge">Featured in press</span></h3>
+            <div class="meta">Mechanical Lead · Team Abhiyaan, IIT Madras <span class="sep">·</span> 2022 to 2023</div>
+            <p class="desc">A steer-by-wire module that turns an e-golf cart into an autonomous shuttle. Designed FEA-validated mounts for the rack actuation and mapped the steering control so the drive-by-wire commands track the intended steer angle.</p>
+            <div class="tags"><span class="tag">steer-by-wire</span><span class="tag">actuation</span><span class="tag">FEA</span><span class="tag">autonomous shuttle</span></div>
             <div class="links">
-              <a class="lnk" href="assets/reports/thryv-mobility-internship.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Internship report</a>
+              <a class="lnk" href="assets/reports/times-of-india-driverless.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M17 7H9M17 7v8"/></svg> Press</a>
             </div>
           </div>
         </article>
@@ -549,7 +551,7 @@
           <div class="body">
             <h3>Spacecraft Attitude Control (SDRE)</h3>
             <div class="meta">Dynamics and Control of Spacecraft · IIT Madras</div>
-            <p class="desc">A <b>State-Dependent Riccati Equation</b> attitude controller with the satellite kinematics written in Modified Rodrigues Parameters. I interpolated pointwise-stable gains from MATLAB and checked them across a set of quadratic performance index cases.</p>
+            <p class="desc">A <b>State-Dependent Riccati Equation</b> attitude controller with the satellite kinematics written in Modified Rodrigues Parameters. Interpolated pointwise-stable gains from MATLAB and checked them across a set of quadratic performance index cases.</p>
             <div class="tags"><span class="tag">nonlinear control</span><span class="tag">SDRE</span><span class="tag">MRP</span></div>
             <div class="links">
               <a class="lnk" href="assets/reports/spacecraft-attitude-sdre.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Report</a>
