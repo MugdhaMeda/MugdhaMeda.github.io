@@ -5,13 +5,18 @@
   ----------------------------------------------------------------------------
    QUICK EDIT GUIDE (search for these ALL-CAPS tags to jump to a section):
 
-   [EDIT: INTRO]      Home-page intro paragraph + contact chips + facts row
-   [EDIT: RESEARCH]   Research project cards
-   [EDIT: OTHER]      "Other Projects" cards
-   [EDIT: RESUME]     Resume tab (PDF is assets/Mugdha_Meda_Resume.pdf)
-   [EDIT: ABOUT]      About text, toolbox, interests
-   [EDIT: FOOTER]     Footer links
-   [EDIT: LINKS]      GitHub / LinkedIn / email links (also repeated in footer)
+   [EDIT: INTRO]       Home intro paragraph + contact chips + facts row
+   [EDIT: RESEARCH]    Research project cards       (these show on the HOME page)
+   [EDIT: OTHER]       "Other Projects" cards       (these show on the HOME page)
+   [EDIT: RESUME]      Resume tab (PDF is assets/Mugdha_Meda_Resume.pdf)
+   [EDIT: ABOUT]       About text + toolbox
+   [EDIT: EXPERIENCE]  Work-history timeline (on the About tab)
+   [EDIT: EDUCATION]   Education timeline (on the About tab)
+   [EDIT: FOOTER]      Footer links
+   [EDIT: LINKS]       LinkedIn / email / resume links (also repeated in footer)
+
+   LAYOUT NOTE: Projects now live on the HOME page, right under the intro.
+   The "Projects" nav tab just smooth-scrolls down to them (#projects-section).
 
    HOW TO ADD OR SWAP A PROJECT IMAGE:
      - Drop the file into  assets/img/  (or a video into  assets/video/)
@@ -122,6 +127,9 @@
   .strip h2{margin:0;font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
   .strip p{margin:2px 0 0;font-size:13.5px;color:rgba(255,255,255,.72)}
   .panel-top{padding-top:34px}
+  /* Projects live on the home page; this clears the sticky nav when the
+     "Projects" tab scrolls to them. Bump it if the nav gets taller. */
+  #projects-section{scroll-margin-top:78px}
 
   /* ---------- cards ---------- */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
@@ -194,6 +202,17 @@
   .interest h4{margin:0 0 6px;font-size:1rem}
   .interest p{margin:0;color:var(--muted);font-size:13.5px}
 
+  /* ---------- experience / education timeline (LinkedIn-style rail) ---------- */
+  .timeline{position:relative;max-width:720px;margin:4px 0 8px;padding-left:30px}
+  .timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+  .tl-item{position:relative;padding-bottom:22px}
+  .tl-item:last-child{padding-bottom:4px}
+  .tl-item::before{content:"";position:absolute;left:-29px;top:4px;width:14px;height:14px;border-radius:999px;background:#fff;border:3px solid var(--strip)}
+  .tl-role{margin:0;font-weight:600;font-size:15px;color:var(--ink)}
+  .tl-org{margin:1px 0 0;font-size:14px;color:var(--muted)}
+  .tl-date{margin:3px 0 0;font-size:12.5px;color:var(--faint)}
+  .tl-note{margin:7px 0 0;font-size:13.5px;color:var(--muted)}
+
   /* ---------- resume tab embed ---------- */
   .resume-embed{margin-top:18px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;height:min(84vh,1100px);background:#fafafa}
   .resume-embed object,.resume-embed iframe{width:100%;height:100%;border:0;display:block}
@@ -252,14 +271,15 @@
       <div class="facts">
         <span><b>M.S.</b> Carnegie Mellon University · 4.0/4.0 · 2027</span>
         <span><b>B.Tech</b> IIT Madras · Mechanical, 9.04/10 · 2025</span>
-        <span><b>Patent</b> IN 202341083243</span>
       </div>
     </div>
-  </section>
+    <!-- end intro -->
 
-  <!-- ==================== PROJECTS ==================== -->
-  <section class="panel" id="projects">
-    <div class="wrap panel-top">
+    <!-- ================= PROJECTS (shown on the HOME page) =================
+         The "Projects" nav tab just smooth-scrolls down to this block
+         (see #projects-section in the script at the bottom of the file).
+         To reorder projects, move whole <article class="card"> blocks. -->
+    <div class="wrap panel-top" id="projects-section">
 
       <!-- ---- [EDIT: RESEARCH] ---- -->
       <div class="strip">
@@ -598,8 +618,8 @@
 </article>
 
       </div>
-    </div>
-  </section>
+    </div><!-- end #projects-section -->
+  </section><!-- end HOME (hero + intro + projects) -->
 
   <!-- ==================== RESUME ==================== -->
   <!-- [EDIT: RESUME] Replace assets/Mugdha_Meda_Resume.pdf to update this. -->
@@ -649,10 +669,70 @@
           <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7"/></svg> LinkedIn</a>
       </div>
 
+      <!-- ==================== [EDIT: EXPERIENCE] ====================
+           LinkedIn-style timeline, newest first. To ADD a role, copy one
+           <div class="tl-item"> ... </div> block and edit the four lines.
+           tl-note is optional (delete the line if you don't want a blurb). -->
+      <div class="strip">
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <p class="tl-role">Teaching Assistant</p>
+          <p class="tl-org">Robot Dynamics and Analysis, Carnegie Mellon University</p>
+          <p class="tl-date">Sept 2026 - Present</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-role">Graduate Research Assistant</p>
+          <p class="tl-org">Microrobotics Lab, Carnegie Mellon University</p>
+          <p class="tl-date">Jan 2026 - Present &middot; Pittsburgh, PA</p>
+          <p class="tl-note">Control of legged and aerial robots at the centimeter scale.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-role">Teaching Assistant</p>
+          <p class="tl-org">Advanced Control Systems Integration, Carnegie Mellon University</p>
+          <p class="tl-date">Sept 2025 - Dec 2025</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-role">R&amp;D Intern</p>
+          <p class="tl-org">Thryv Mobility</p>
+          <p class="tl-date">Jun 2024 - Aug 2024</p>
+          <p class="tl-note">Motor-torque control and a micro-ROS hardware-in-the-loop rig for adaptive exercise equipment.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-role">Mechanical Lead</p>
+          <p class="tl-org">Team Abhiyaan, IIT Madras</p>
+          <p class="tl-date">2022 - 2023</p>
+          <p class="tl-note">Led a 5-engineer subteam on the IGVC autonomous vehicle and a steer-by-wire shuttle.</p>
+        </div>
+      </div>
+
+      <!-- ==================== [EDIT: EDUCATION] ====================
+           Same block layout as Experience above. Newest first. -->
+      <div class="strip">
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <p class="tl-role">M.S. Mechanical Engineering - Research</p>
+          <p class="tl-org">Carnegie Mellon University</p>
+          <p class="tl-date">2025 - 2027 &middot; Dynamics and Controls &middot; GPA 4.0/4.0</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-role">B.Tech Mechanical Engineering</p>
+          <p class="tl-org">Indian Institute of Technology Madras</p>
+          <p class="tl-date">2021 - 2025 &middot; GPA 9.04/10</p>
+        </div>
+      </div>
+
+      <!-- [EDIT: INTERESTS] hidden for now. To show "Other Interests" again,
+           uncomment this strip heading AND the .interests cards block below. -->
+      <!--
       <div class="strip">
         <h2>Other Interests</h2>
       </div>
-<!-- 
+      -->
+<!--
       <div class="interests">
         <div class="interest">
           <h4>Tinkering and making</h4>
@@ -688,26 +768,47 @@
 
 <script>
   // ---- tab routing (hash-based, back-button friendly) ----
-  // To add a tab: add its id here AND add a matching .tab-btn + <section class="panel" id="..."> above.
+  // Real panels: home, resume, about. "Projects" is NOT its own panel any
+  // more: it lives on the home page, so the Projects tab shows the home
+  // panel and smooth-scrolls down to #projects-section.
+  // To add a NEW real tab: add its id to `valid` AND `panelFor`, add a
+  // matching .tab-btn in the nav, and a <section class="panel" id="..."> above.
   (function(){
     var panels = document.querySelectorAll('.panel');
-    var btns = document.querySelectorAll('[data-tab]');
-    var valid = {home:1, projects:1, resume:1, about:1};
+    var btns   = document.querySelectorAll('[data-tab]');
+    var valid    = {home:1, projects:1, resume:1, about:1};
+    var panelFor = {home:'home', projects:'home', resume:'resume', about:'about'};
 
     function show(name){
       if(!valid[name]) name = 'home';
-      panels.forEach(function(p){ p.classList.toggle('active', p.id === name); });
+      var panelId = panelFor[name];
+      panels.forEach(function(p){ p.classList.toggle('active', p.id === panelId); });
       document.querySelectorAll('.tab-btn').forEach(function(b){
         b.classList.toggle('active', b.getAttribute('data-tab') === name);
       });
-      window.scrollTo(0,0);
+      if(name === 'projects'){
+        // home panel is now visible; scroll down to the projects block.
+        // Double rAF so the panel has laid out before we measure it.
+        var sec = document.getElementById('projects-section');
+        requestAnimationFrame(function(){
+          requestAnimationFrame(function(){
+            if(sec) sec.scrollIntoView({behavior:'smooth', block:'start'});
+          });
+        });
+      } else {
+        window.scrollTo(0,0);
+      }
     }
     function fromHash(){ show((location.hash || '#home').slice(1)); }
 
     btns.forEach(function(b){
       b.addEventListener('click', function(e){
         e.preventDefault();
-        location.hash = b.getAttribute('data-tab');
+        var name = b.getAttribute('data-tab');
+        // re-clicking the current tab won't fire hashchange, so act directly
+        // (lets a second Projects click re-scroll, and Home jump back to top)
+        if(name === location.hash.slice(1) || (name === 'home' && !location.hash)) show(name);
+        else location.hash = name;
       });
     });
     window.addEventListener('hashchange', fromHash);
