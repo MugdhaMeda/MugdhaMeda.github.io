@@ -4,7 +4,7 @@
 
 ```
 portfolio/
-├── index.html                 # the whole site (HTML + CSS + a lil JS, all inline)
+├── index.html                 # HTML + CSS + a lil JS
 └── assets/
     ├── Mugdha_Meda_Resume.pdf # linked resume (one page)
     ├── img/                   
